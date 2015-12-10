@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.moven.ghostalarm.MainActivity" >
+
+    <EditText 
+        android:id="@+id/hour"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+    
+    <TextView
+        android:id="@+id/hour_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" 
+        android:layout_toEndOf="@id/hour"
+        android:text="时" />
+    
+    <EditText 
+        android:id="@+id/minute"
+        android:layout_width="100dp"
+        android:layout_height="50dp" 
+        android:layout_toEndOf="@id/hour_title" />
+    
+    <TextView
+        android:id="@+id/minute_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" 
+        android:layout_toEndOf="@id/minute"
+        android:text="分" />
+    
+    <Button 
+        android:id="@+id/set_alart_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/hour"
+        android:text="设置闹钟" />
+    
+    
+
+</RelativeLayout>
